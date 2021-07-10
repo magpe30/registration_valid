@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>DirectlyApply</title>
+  <meta name="description" content="DirectlyApply is the world's leading job discovery platform">
+  <meta name="keywords" content="job, search, job platform, industries, job board">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- place for favicon -->
+  <link rel="icon" href="" type="image/x-icon">
+  <!-- CSS here -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="register-form">
+        <form id="signup-form" class="register-form-inner" action="#" method="POST">
+            <div id="wrong-check" class="wrong-check"></div>
+            <div class="login-inner">
+                <div class="login-card">
+                    <div class="login-banner">
+                        <div class="banner-inner">
+                          <div class="banner-logo"><img src="logo.png" alt="Directly Apply logo">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-card">
+                    <div class="login-form">
+                        <h1>Welcome!</h1>
+                        <label for="signup-username">Name</label>
+                            <input
+                                class="card-input"
+                                type="name"
+                                name="name"
+                                id="signup-username"
+                                autocomplete = "off"
+                                placeholder = "Enter your username"
+                        
+                            />
+                        <label for="signup-email">Email address</label>
+                            <input 
+                              class="card-input"
+                              type="email"
+                              name="email"
+                              id="signup-email"
+                              autocomplete="off"
+                              placeholder="Enter your email"
+                             
+                             />
+                        <label for="phonenumber">Phone number</label>
+                            <input 
+                              class="card-input"
+                              type="number"
+                              name="email"
+                              id="phonenumber"
+                              autocomplete="off"
+                              placeholder="Provide your phone number"
+                           
+                             />
+                        <label for="position">Current position</label>
+                            <input 
+                               class="card-input"
+                               type="text"
+                               name="current-position"
+                               id="position"
+                               autocomplete="off"
+                               placeholder="Please tell us your current job title"
+                              
+                            />
+                        <label for="signup-password">Password</label>
+                            <input  
+                              class="card-input"
+                              type="password"
+                              name="password"
+                              id="signup-password"
+                              autocomplete="off"
+                              placeholder="Enter your password"
+                             
+                            />
+                        <label for="password2">Confirm password</label>
+                            <input  
+                              class="card-input"
+                              type="password"
+                              name="password2"
+                              id="password2"
+                              autocomplete="off"
+                              placeholder="Enter your password"
+                             
+                            />
+                        <div class="dropdowns-area">
+                            <select id="findout" class="dropdown-area-select">
+                                <option class="find-us" value="0">How did you find out about us</option>
+                                <option class="find-us" value="indeed">Indeed</option>
+                                <option class="find-us" value="google">Google</option>
+                                <option class="find-us" value="friends">Friends</option>
+                                <option class="find-us" value="social-media">Social Media</option>
+                            </select>
+                        </div>
+                        <div class="terms-and-conditions">
+                            <label for="terms-conditions" class="terms-label"><input type="checkbox" name="terms" id="terms-conditions">I agree to the Terms and Conditions</label>
+                        </div>
+                        <button class="submit-btn" id="signup-button" type="submit">Sign up</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="copy-right">
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved DirectlyApply | <a href="#">Terms & Conditions</a>
+                </p>
+            </div>
+        </form>
+    
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
