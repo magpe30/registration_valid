@@ -36,6 +36,10 @@ submitBtn.addEventListener("click", (event) => {
     if (password.length < 6){
         messages.push("Password should have at least 6 character");
     }
+    //email validation 
+    if(!isEmail(email)){
+        messages.push("Please make sure that your email is valid");
+    }
     //check if passwords match
     if(password !== confirmPassword){
         messages.push("Passwords do not match");
@@ -61,5 +65,10 @@ submitBtn.addEventListener("click", (event) => {
         let template = `<p class="pass">You are registered !</p>`
         mistakeParagraph.innerHTML += template;
         console.log(formInputs);
+    }
+
+    //function for validation email
+    function isEmail(email) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
     }
 });
